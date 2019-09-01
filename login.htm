@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login form</title>
+	<link rel="stylesheet" type="text/css" href="login_style.css">
+</head>
+<body>
+		<form method="host">
+		<div id="login-form">
+		
+		<h2>Log In</h2>
+
+		<div id="Details">
+
+		<h4>First Name : 
+
+		<input type="text" placeholder="Enter Your Name" id="user"></h4>
+
+		<h4>
+			
+			Password   : <input type="Password" placeholder="Enter Your Password" id="pass">
+
+		</h4>
+
+		<button id="loginButton">LOG IN</button>
+
+
+	</div>
+
+	<span class="already"><a href="login.htm" target="_blank">Having Trouble Logging In? Forget Password?</a></span>
+
+	</div>
+</form>
+
+
+	
+
+
+	<script type="text/javascript">
+		
+		document.getElementById("loginButton").onclick = function(){
+
+
+			var Username="pranav";
+			var Username1="shardul";
+			var enteruser = document.getElementById("user").value;
+
+			var Password=12345;
+			var Password1=67890;
+			var enterpass = document.getElementById("pass").value;
+
+			// document.getElementById("loginButton").onclick= function(){
+
+			if(enteruser==Username && enterpass==Password){
+
+				  alert("successful");
+					//document.getElementById("login-form").="www.google.com";
+				}
+
+			else
+			{
+				alert("Username or password incorrect! Please enter correct details.");
+			}
+
+}
+
+
+	</script>
+
+</body>
+</html>
